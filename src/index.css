@@ -199,9 +199,10 @@ main {
   }
   .service-card {
     width: 100%;
-    max-width: 370px;
-    min-width: 220px;
+    max-width: 98vw;
+    min-width: 0;
     margin: 0 auto;
+    box-sizing: border-box;
   }
   main {
     padding: 0 0.5rem;
