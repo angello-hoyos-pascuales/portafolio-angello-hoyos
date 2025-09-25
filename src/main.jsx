@@ -4,7 +4,7 @@ import { StrictMode } from 'react';
 // Importa createRoot para inicializar la app en el DOM
 import { createRoot } from 'react-dom/client';
 // Importa componentes de React Router para navegación SPA
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 // Importa los estilos globales
 import './index.css';
 // Importa los componentes principales de la app
@@ -21,8 +21,8 @@ import Footer from './Footer.jsx';
 createRoot(document.getElementById('root')).render(
   // StrictMode ayuda a detectar errores y prácticas inseguras
   <StrictMode>
-    {/* BrowserRouter habilita la navegación SPA */}
-    <BrowserRouter>
+  {/* HashRouter habilita la navegación SPA compatible con GitHub Pages */}
+  <HashRouter>
       {/* Navbar se muestra en todas las páginas */}
       <Navbar />
       {/* Definición de rutas principales de la app */}
@@ -39,6 +39,6 @@ createRoot(document.getElementById('root')).render(
       </Routes>
       {/* Footer se muestra en todas las páginas */}
       <Footer />
-    </BrowserRouter>
+  </HashRouter>
   </StrictMode>
 );
