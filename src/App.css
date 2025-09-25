@@ -1,0 +1,43 @@
+
+/* Logo principal: tamaño y transición de filtro */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+/* Sombra azul al pasar el mouse sobre el logo */
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+/* Sombra especial para el logo de React */
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/* Animación de giro para el logo */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Aplica animación de giro solo si el usuario no prefiere reducir movimiento */
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Tarjeta genérica para secciones */
+.card {
+  padding: 2em;
+}
+
+/* Estilo para texto de documentación */
+.read-the-docs {
+  color: #888;
+}

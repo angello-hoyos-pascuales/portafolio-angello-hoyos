@@ -1,0 +1,161 @@
+/* Barra de navegación principal: fondo, color, sombra y layout fijo arriba */
+.navbar {
+  background: #071952;
+  color: #EBF4F6;
+  padding: 10px 0;
+  box-shadow: 5px 5px 5px 5px rgba(55, 0, 255, 0.3);
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* Contenedor del logo a la izquierda */
+.nav-logo-left {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+}
+
+/* Menú de navegación: horizontal, alineado a la derecha */
+.menu {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 1.5rem;
+}
+
+/* Botón hamburguesa (oculto en escritorio, visible en móvil) */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: #EBF4F6;
+  font-size: 1.7rem;
+  margin-left: 1.5rem;
+  cursor: pointer;
+}
+
+/* =================== RESPONSIVE: Menú móvil =================== */
+@media (max-width: 800px) {
+  /* Muestra el botón hamburguesa en móvil */
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 2vw;
+    top: 12px;
+    z-index: 2100;
+  }
+}
+
+/* Logo de la navbar: fuente, color y alineación */
+.nav-logo {
+  color: #EBF4F6;
+  text-decoration: none;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.0rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Imagen pequeña (logo o ícono) en la navbar */
+.imagen-pequena {
+  width: 30px;
+  height: auto;
+  vertical-align: middle;
+}
+/* Reinicio de lista y layout base del menú */
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  position: static;
+}
+/* Enlaces del menú: color, fuente y transición */
+.menu a {
+  color: #EBF4F6;
+  text-decoration: none;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.0rem;
+  transition: color 0.2s;
+}
+/* Estado activo, hover y focus de los enlaces */
+.menu a.active, .menu a:focus, .menu a:hover {
+  color: #e6e7e3;
+}
+
+/* =================== RESPONSIVE: Menú móvil desplegable =================== */
+@media (max-width: 800px) {
+  /* Menú se vuelve vertical, fondo y sombra, oculto por defecto */
+  .menu {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    left: auto;
+    background: #071952;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 220px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    border-radius: 12px 0 0 12px;
+    display: none;
+    padding: 1.2rem 0.7rem;
+    z-index: 2000;
+  }
+  /* Cuando el menú está abierto (clase .open) */
+  .menu.open {
+    display: flex;
+  }
+  /* Espaciado y alineación de los ítems del menú */
+  .menu li {
+    margin: 0 0 18px 0;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  /* Enlaces del menú móvil: fondo, padding y efecto hover */
+  .menu a {
+    background: #0a1e3a;
+    border-radius: 10px;
+    padding: 12px 0;
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 500;
+    gap: 8px;
+    transition: background 0.2s, color 0.2s;
+  }
+  /* Hover y activo en menú móvil */
+  .menu a.active, .menu a:focus, .menu a:hover {
+    background: #088395;
+    color: #fff;
+  }
+  /* Botón hamburguesa siempre visible en móvil */
+  .hamburger {
+    display: block;
+  }
+}

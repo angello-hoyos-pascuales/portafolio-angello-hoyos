@@ -1,0 +1,36 @@
+
+/* Fondo de burbujas animadas: cubre toda la pantalla, no interfiere con el mouse */
+.bubbles-bg {
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+/* Estilo base para cada burbuja (círculo o carácter flotante) */
+.bubble, .binary-bubble {
+  position: absolute;
+  bottom: -60px; /* Empieza fuera de la pantalla */
+  animation: bubble-float linear infinite;
+  user-select: none;
+  font-family: 'Krona One', 'Consolas', 'monospace';
+  background: none !important;
+  border-radius: 0 !important;
+  padding: 0;
+}
+
+/* Animación: sube la burbuja y la desvanece */
+@keyframes bubble-float {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-110vh) scale(1.1);
+    opacity: 0;
+  }
+}

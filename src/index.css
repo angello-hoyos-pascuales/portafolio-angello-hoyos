@@ -1,0 +1,284 @@
+/* Importación de fuentes y estilos generales */
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* Estilos base del body: fondo, fuente y color principal */
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #fff;
+  color: #222;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  /* padding-top eliminado para evitar espacio en blanco superior */
+}
+
+/* Quita los puntos y márgenes de listas */
+ul, ol {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+/* Títulos con fuente y color especial */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
+  font-style: italic;
+  color: #7c3aed;
+}
+
+/* Utilidad para resaltar texto primario */
+.text-primary {
+  color: #0ea5e9;
+}
+
+/* Botón principal: grande, con gradiente y sombra */
+.boton {
+  display: inline-block;
+  padding: 16px 38px;
+  font-size: 1.18rem;
+  background: linear-gradient(90deg, #0ea5e9 0%, #a3e635 100%);
+  color: #18181b;
+  text-decoration: none;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px 0 #0ea5e955;
+  transition: background 0.3s, color 0.3s, transform 0.2s;
+  font-family: 'Krona One', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 1.2rem auto 2rem auto;
+  text-align: center;
+}
+.boton:hover {
+  background: linear-gradient(90deg, #a3e635 0%, #0ea5e9 100%);
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Imagen destacada (logo, avatar, etc.) */
+.imagen {
+  width: 220px;
+  border-radius: 15px;
+  box-shadow: none;
+  display: block;
+  margin: 0 auto 1.5rem auto;
+}
+
+.social-media {
+/* Lista de íconos de redes sociales, grandes y centrados */
+.social-media {
+  list-style: none !important;
+  display: flex;
+  gap: 2.2rem;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+  font-size: 2.8rem;
+  color: #0ea5e9;
+  transition: color 0.2s, transform 0.2s;
+}
+.social-media a:hover {
+  color: #7c3aed;
+  transform: scale(1.15);
+}
+
+/* Contenido principal: padding para navbar fijo y mínimo de altura */
+main {
+  padding: 7rem 2rem 2.5rem 2rem; /* Ajuste para compensar solo el navbar fijo */
+  background: none;
+  min-height: 80vh;
+}
+
+/* Ajuste para los puntos decorativos y ojos en Contacto */
+/* Ajuste visual para decorativos y ojos en Contacto */
+.decorativo, .eyes {
+  margin-top: 2.5rem !important;
+  margin-bottom: 1.5rem !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos para el contenedor de las tarjetas de proyectos */
+/* Contenedor de tarjetas de proyectos: grid responsivo */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  border: none;
+  border-radius: 24px;
+  box-sizing: border-box;
+  background: transparent;
+  box-shadow: 0 2px 16px 0 #7c3aed11;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 2.5rem;
+  width: 100%;
+  justify-items: center;
+}
+
+/* Projects section style */
+/* Sección de proyectos: sin fondo ni bordes, margen y transición */
+.projects-section {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 40px auto 15px auto;
+  width: 100%;
+  min-width: 220px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  outline: none;
+}
+
+/* Tarjeta de proyecto: fondo degradado, sombra y bordes redondeados */
+.service-card {
+  width: 100%;
+  max-width: 370px;
+  min-width: 220px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 60%, #a3e635 100%);
+  box-shadow: 0 8px 32px 0 rgba(80,60,180,0.13), 0 2px 12px 0 #0ea5e955;
+  border-radius: 28px 8px 28px 8px;
+  position: relative;
+  border: 1.5px solid #7c3aed55;
+  transition: box-shadow 0.3s, transform 0.3s, background 0.3s, border 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  padding: 1.5rem 1.2rem 1.5rem 1.2rem;
+  cursor: pointer;
+}
+.service-card:hover {
+  /* Efecto hover: sombra y borde más intenso, fondo animado */
+  box-shadow: 0 12px 36px 0 #7c3aed33, 0 4px 16px 0 #0ea5e955;
+  border: 2.5px solid #0ea5e9cc;
+  background: linear-gradient(135deg, #e0e7ff 0%, #a3e635 80%, #0ea5e9 100%);
+  transform: translateY(-6px) scale(1.025);
+}
+.service-card::after {
+  /* Efecto de brillo difuso en la tarjeta */
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  border-radius: 22px;
+  background: linear-gradient(120deg, #a3e63533 0%, #0ea5e933 100%);
+  filter: blur(8px);
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* =================== RESPONSIVE =================== */
+/* Ajustes para pantallas medianas (tablets) */
+@media (max-width: 1200px) {
+  .presentacion {
+    flex-direction: column-reverse !important;
+    align-items: center !important;
+    gap: 1.8rem !important;
+    padding: 2.5rem 1.2rem 2.5rem 1.2rem !important;
+    min-height: 70vh !important;
+    text-align: center !important;
+    justify-content: center !important;
+  }
+  .imagen {
+    width: 180px;
+    max-width: 60vw;
+    margin: 0 auto 1.5rem auto;
+    display: block;
+  }
+  .projects-section {
+    padding: 1.5rem 1rem;
+    min-height: 60vh;
+  }
+  .service-card {
+    width: 100%;
+    max-width: 370px;
+    min-width: 220px;
+    margin: 0 auto;
+  }
+  main {
+    padding: 0 0.5rem;
+  }
+  .about-bg-img {
+    max-width: 70vw !important;
+    max-height: 40vh !important;
+  }
+}
+
+/* Ajustes para pantallas pequeñas (móvil) */
+@media (max-width: 800px) {
+  body {
+    padding-top: 56px;
+    font-size: 0.98rem;
+  }
+  h1, h4 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .boton {
+    width: auto;
+    min-width: 120px;
+    font-size: 1rem;
+    padding: 12px 24px;
+    margin-bottom: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .social-media {
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  .imagen {
+    width: 140px;
+    max-width: 90vw;
+    margin: 0 auto 1.2rem auto;
+    display: block;
+  }
+  .presentacion {
+    flex-direction: column-reverse !important;
+    align-items: center !important;
+    gap: 1.4rem !important;
+    padding: 2rem 0.5rem 2rem 0.5rem !important;
+    min-height: 70vh !important;
+    text-align: center !important;
+    justify-content: center !important;
+  }
+  .projects-section {
+    padding: 1rem 0.5rem;
+    min-height: 60vh;
+  }
+  .service-card {
+    width: 100%;
+    max-width: 370px;
+    min-width: 220px;
+    margin: 0 auto;
+  }
+  .footer {
+    font-size: 0.95rem;
+    padding: 0.7rem 0;
+  }
+  .container {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+    padding: 1.5rem 0.5rem;
+  }
+}
+/* Título y párrafo grandes para la sección de proyectos */
+.projects-section h4 {
+  font-size: 2.3rem;
+  font-weight: 800;
+  margin-bottom: 0.7rem;
+}
+.projects-section p {
+  font-size: 1.35rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
