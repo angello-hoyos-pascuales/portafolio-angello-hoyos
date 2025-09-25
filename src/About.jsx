@@ -44,7 +44,7 @@ export default function About() {
         }}
       >
         {/* Logo desenfocado de fondo */}
-        <img src="/icono.png" alt="icono fondo" style={{ maxWidth: '60vw', maxHeight: '70vh', objectFit: 'contain' }} />
+  <img src="icono.png" alt="icono fondo" style={{ maxWidth: '60vw', maxHeight: '70vh', objectFit: 'contain' }} />
       </div>
       {/* Contenido principal */}
       <main style={{ 

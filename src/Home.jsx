@@ -39,7 +39,7 @@ export default function Home() {
       {/* Columna de la imagen/logo grande */}
       <div style={{ flex: '0 0 240px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         {/* Imagen de logo destacada */}
-        <img className="imagen" src="/logo.png" alt="imagen html" style={{ width: '440px', borderRadius: '22px', boxShadow: '-1px -1px 12px 0 rgb(122, 221, 102), 6px 6px 32px 4px rgb(92, 162, 235)' }} />
+  <img className="imagen" src="logo.png" alt="imagen html" style={{ width: '440px', borderRadius: '22px', boxShadow: '-1px -1px 12px 0 rgb(122, 221, 102), 6px 6px 32px 4px rgb(92, 162, 235)' }} />
       </div>
     </main>
   );

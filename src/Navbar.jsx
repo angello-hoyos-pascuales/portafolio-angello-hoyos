@@ -19,7 +19,7 @@ export default function Navbar() {
         <div className="nav-logo-left">
           <NavLink to="/" className="active nav-logo">
             {/* Imagen pequeña del logo */}
-            <img className="imagen-pequena" src="/icono.png" alt="Logo" /> Angello A. Hoyos Pascuales
+            <img className="imagen-pequena" src="icono.png" alt="Logo" /> Angello A. Hoyos Pascuales
           </NavLink>
         </div>
         {/* Botón hamburguesa para abrir/cerrar menú en móvil */}

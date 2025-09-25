@@ -6,7 +6,7 @@ const projects = [
   {
     title: 'SEO y Marketing Digital',
     desc: 'Mejoramos la visibilidad de su sitio web en los motores de búsqueda, atrayendo más clientes potenciales.',
-    img: '/logo.png',
+  img: 'logo.png',
     link: '/',
     color: 'linear-gradient(135deg, #EBF4F6 0%, #088395 100%)',
     icon: 'fa-chart-line'
@@ -14,7 +14,7 @@ const projects = [
   {
     title: 'App de Tareas',
     desc: 'Organiza tus tareas diarias con una interfaz intuitiva y notificaciones inteligentes.',
-    img: '/icono.png',
+  img: 'icono.png',
     link: '/',
     color: 'linear-gradient(135deg, #f8fafc 0%, #00b0ff 100%)',
     icon: 'fa-list-check'
@@ -22,7 +22,7 @@ const projects = [
   {
     title: 'E-commerce Moderno',
     desc: 'Tienda online con pagos seguros, catálogo dinámico y panel de administración.',
-    img: '/logo.png',
+  img: 'logo.png',
     link: '/',
     color: 'linear-gradient(135deg, #fffde4 0%, #ff3d00 100%)',
     icon: 'fa-cart-shopping'
@@ -30,7 +30,7 @@ const projects = [
   {
     title: 'Portafolio Interactivo',
     desc: 'Presenta tus proyectos y habilidades con animaciones y diseño responsive.',
-    img: '/icono.png',
+  img: 'icono.png',
     link: '/',
     color: 'linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%)',
     icon: 'fa-user-astronaut'
@@ -38,7 +38,7 @@ const projects = [
   {
     title: 'Blog Personal',
     desc: 'Publica artículos, comparte ideas y conecta con tu audiencia fácilmente.',
-    img: '/logo.png',
+  img: 'logo.png',
     link: '/',
     color: 'linear-gradient(135deg, #f7971e 0%, #ffd200 100%)',
     icon: 'fa-blog'
@@ -46,7 +46,7 @@ const projects = [
   {
     title: 'Dashboard de Analítica',
     desc: 'Visualiza métricas clave en tiempo real con gráficos modernos y filtros avanzados.',
-    img: '/icono.png',
+  img: 'icono.png',
     link: '/',
     color: 'linear-gradient(135deg, #43cea2 0%, #185a9d 100%)',
     icon: 'fa-chart-pie'
