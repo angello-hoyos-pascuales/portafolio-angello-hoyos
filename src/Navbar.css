@@ -107,7 +107,7 @@
   /* Menú se vuelve vertical, fondo y sombra, oculto por defecto */
   .menu {
     position: absolute;
-    top: 60px;
+    top: 48px; /* Reducido para eliminar espacio blanco superior */
     right: 0;
     left: auto;
     background: #071952;
