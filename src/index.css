@@ -215,7 +215,8 @@ main {
 /* Ajustes para pantallas pequeñas (móvil) */
 @media (max-width: 800px) {
   body {
-    padding-top: 56px;
+    /* Eliminar padding-top para evitar espacio blanco sobre el navbar en móvil */
+    padding-top: 0;
     font-size: 0.98rem;
   }
   h1, h4 {
